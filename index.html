@@ -3,12 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+    
+    <!--* CSS *-->
     <link rel="stylesheet" href="assets/main.css">
-    <!-- === -->
+    <!--* === *-->
+
+    <!--* FONTS *-->
+    
+    <!--? POPPINS ?-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!--* ===== *-->
     <title>Web telegram bot</title>
 </head>
 <body>
-    <button></button>
+    <section class="authentication">
+        <!-- Login page -->
+        <div class="login active page">
+            <h3>LOGIN</h3>
+            <div class="form">
+                <label for="">
+                    <p>Phone number</p>
+                    <input type="tel" placeholder="Your phone number">
+                </label>
+                <label for="">
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter your password">
+                </label>
+            </div>
+            <a class="toForgot">Forgot password ?</a>
+            <button id="loginBtn">LOGIN</button>
+            <p>Don't have an account? <a class="toRegister">Register</a></p>
+        </div>
+        <!-- Register page -->
+        <div class="register page">
+            <h3>REGISTER</h3>
+            <div class="form">
+                <label for="">
+                    <p>Fullname</p>
+                    <input type="text" placeholder="Enter your name">
+                </label>
+                <label for="">
+                    <p>Phone number</p>
+                    <input type="tel" placeholder="Enter your phone number">
+                </label>
+                <label for="">
+                    <p>Password</p>
+                    <input type="password" placeholder="Create your password">
+                </label>
+            </div>
+            <button id="registerBtn">REGISTER</button>
+            <p>Already have an account? <a href="" class="toLogin">Login</a></p>
+        </div>
+        <!-- Address page -->
+        <div class="address page">
+            <h3>ADDRESS SETUP</h3>
+            <div class="form">
+                <label for="">
+                    <p>ADDRESS</p>
+                    <input type="text" placeholder="Enter your Address">
+                </label>
+                <label for="">
+                    <p>City</p>
+                    <input type="text" placeholder="Enter your City">
+                </label>
+                <label for="">
+                    <p>Region</p>
+                    <input type="text" placeholder="Enter your Region">
+                </label>
+            </div>
+            <button id="addressBtn">ADD ADDRESS</button>
+        </div>
+        <!-- FORGOT PASSWORD -->
+        <div class="forgot page">
+            <h3>FORGOT PASSWORD</h3>
+            <p class="reminder">We’ll send a password reset <br>
+                sms to your phone number.</p>
+            <div class="form">
+                <label for="">
+                    <p>Phone number</p>
+                    <input type="tel" placeholder="Enter your phone number">
+                </label>    
+            </div>
+            <button id="resetBtn">RESET PASSWORD</button>
+        </div>
+    </section>
 </body>
 </html>
