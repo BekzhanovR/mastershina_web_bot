@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     background-color: #fff;
+    margin-bottom: 105px;
 
     .container{
         width: calc(100% - 40px);
@@ -10,8 +11,6 @@
         margin: 0 auto;
         
         .home{
-            margin-bottom: 120px;
-
             .top{
                 display: flex;
                 align-items: center;

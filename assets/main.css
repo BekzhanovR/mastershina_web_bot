@@ -117,14 +117,12 @@ nav ul {
   width: 100%;
   height: auto;
   background-color: #fff;
+  margin-bottom: 105px;
 }
 .main .container {
   width: calc(100% - 40px);
   max-width: 480px;
   margin: 0 auto;
-}
-.main .container .home {
-  margin-bottom: 120px;
 }
 .main .container .home .top {
   display: flex;
