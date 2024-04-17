@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <!--? ICONS ?-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <!--* ===== *-->
     <title>Web telegram bot</title>
 </head>
@@ -70,8 +73,8 @@
                     <input type="text" placeholder="Enter your City">
                 </label>
                 <label for="">
-                    <p>Region</p>
-                    <input type="text" placeholder="Enter your Region">
+                    <p>Country</p>
+                    <input type="text" placeholder="Enter your Country">
                 </label>
             </div>
             <button id="addressBtn">ADD ADDRESS</button>
@@ -90,5 +93,74 @@
             <button id="resetBtn">RESET PASSWORD</button>
         </div>
     </section>
+    <!-- Main page -->
+    <section class="main">
+        <div class="container">
+            <!-- Home page style -->
+            <div class="home">
+                <div class="top">
+                    <div class="left">
+                        <h3>Hello, <span class="name">John</span>!</h3>
+                        <h4 class="location"><span class="material-symbols-outlined">location_on</span> Nukus, Uzbekstan</h4>
+                    </div>
+                    <div class="right" id="fav-items">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="assets/images/banner.jpg" alt="">
+                </div>
+                <div class="recommended">
+                    <h3>RECOMMENDED FOR YOU</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="addFav">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </div>
+                            <img src="assets/images/Product image.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="title">
+                                    Altaire 205/70r14
+                                </h4>
+                                <div class="bottom">
+                                    <div class="price">$46.0</div>
+                                    <div class="icon">
+                                        <span class="material-symbols-outlined">shopping_cart</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="addFav">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </div>
+                            <img src="assets/images/Product image.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="title">
+                                    Altaire 205/70r14
+                                </h4>
+                                <div class="bottom">
+                                    <div class="price">$46.0</div>
+                                    <div class="icon">
+                                        <span class="material-symbols-outlined">shopping_cart</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-brands">
+                    <h3 id="title">POPULAR BRANDS</h3>
+                    <div class="brands">
+                        <div class="brand">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Javascript section !-->
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
