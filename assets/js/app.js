@@ -33,7 +33,3 @@ registerBtn.addEventListener("click", () => {
     registerPage.classList.remove("active")
     addressPage.classList.add("active")
 })
-
-authentication.forEach(element => {
-    element
-});
