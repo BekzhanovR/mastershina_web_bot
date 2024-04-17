@@ -109,3 +109,25 @@ a{
         }
     }
 }
+
+// Navigation bar style
+nav{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: $light-primary-color;
+    height: 72px;
+    padding: 0px 22px;
+    border-radius: 18px;
+
+    ul{
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+}
