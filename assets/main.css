@@ -116,6 +116,7 @@ nav ul {
 .main {
   width: 100%;
   height: auto;
+  background-color: #fff;
 }
 .main .container {
   width: calc(100% - 40px);
@@ -124,7 +125,6 @@ nav ul {
 }
 .main .container .home {
   margin-bottom: 120px;
-  background-color: #fff;
 }
 .main .container .home .top {
   display: flex;
