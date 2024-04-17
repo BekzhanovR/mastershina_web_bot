@@ -117,7 +117,7 @@ nav ul {
   width: 100%;
   height: auto;
   background-color: #fff;
-  margin-bottom: 105px;
+  padding-bottom: 105px;
 }
 .main .container {
   width: calc(100% - 40px);
