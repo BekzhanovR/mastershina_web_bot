@@ -1,242 +1,284 @@
-.main{
-    // display: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+//Authentication style
+.authentication{
+    width: 100%;
+    display: none;
+    height: 100vh;
+    background-color: $bg-color;
+
+    .authentication-page{
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 20px;
+    
+        h2{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        form{
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                margin-bottom: 28px;
+                color: $light-color;
+    
+                label{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+    
+                input{
+                    width: calc(100vw - 40px);
+                    height: 50px;
+                    border: 1px solid $input-border-color;
+                    border-radius: 10px;
+                }
+
+                &.no-margin{
+                    margin-bottom: 0;
+                }
+            }
+
+            .toForgot{
+                font-size: 12px;
+                margin: 6px 0px 24px !important; 
+                text-align: right;
+                color: $text-color;
+            }
+    
+            button{
+                width: calc(100vw - 40px);
+                height: 55px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                background-color: $btn-color;
+                margin-bottom: 19px;
+            }
+        }
+
+        p{
+            color: $light-color;
+
+            .toLogin, .toRegister{
+                color: $text-color;
+            }
+        }
+
+        &.active{
+            display: flex;
+        }
+    }
+
+    &.active{
+        display: block;
+    }
+}
+
+#pages{
     width: 100%;
     height: auto;
-    background-color: #fff;
-    padding-bottom: 105px;
+    padding: 10px 20px 110px;
+    background-color: $bg-color;
 
-    .container{
-        width: calc(100% - 40px);
-        max-width: 480px;
-        margin: 0 auto;
-        
-        .home{
-            .top{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 12px;
+    #homepage{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
 
-                .left{
-                    h3{
-                        font-size: 18px;
-                        font-weight: 600;
-                        line-height: 27px;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-                        .name{
-                            color: $orange-color;
-                        }
-                    }
+            .top-msg{
+                .hi-msg{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #000;
 
-                    h4{
-                        display: flex;
-                        align-items: center;
-                        font-size: 12px;
-                        line-height: 14px;
-                        color: orange;
+                    span{
+                        color: $text-color;
                     }
                 }
 
-                .right{
-                    width: 28px;
-                    height: 28px;
-                    background-color: $light-primary-color;
+                .location{
+                    font-size: 14px;
+                    color: $text-color;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    border-radius: 6px;
-                    color: #fff;
                 }
             }
 
-            .banner{
+            .favorite-btn{
+                width: 28px;
+                height: 28px;
+                border-radius: 6px;
+                background-color: $btn-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+
+        .hero{
+            width: 100%;
+            height: 160px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img{
                 width: 100%;
-                height: 150px;
-                border-radius: 10px;
-                margin-bottom: 18px;
-                overflow: hidden;
+                height: 100%;
+            }
+        }
 
-                img{
+        .recommended-section{
+            h3{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+
+                .card{
                     width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+                    height: 225px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: $box-shadow;
 
-            .recommended{
-                h3{
-                    font-weight: 600;
-                    font-size: 16px;
-                    color: $light-primary-color;
-                    margin-bottom: 7px;
-                }
-
-                .cards{
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 20px;
-
-                    .card{
-                        position: relative;
+                    img{
                         width: 100%;
-                        height: 235px;
-                        box-shadow: $box-shadow;
-                        border-radius: 10px;
-                        overflow: hidden;
-
-                        .addFav{
-                            position: absolute;
-                            width: 22px;
-                            height: 22px;
-                            background-color: $light-primary-color;
-                            border-radius: 5px;
-                            top: 10px;
-                            right: 10px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            color: #fff;
-                            
-                            span{
-                                font-size: 18px;
-                            }
-                        }
-
-                        img{
-                            width: 100%;
-                            height: 160px;
-                            object-fit: cover;
-                            border-radius: 10px;
-                        }
-
-                        .caption{
-                            padding: 10px;
-                            
-                            h4{
-                                font-size: 12px;
-                                font-weight: 500;
-                                margin-bottom: 8px;
-                            }
-
-                            .bottom{
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                .price{
-                                    font-size: 18px;
-                                    font-weight: 600;
-                                    color: $orange-color;
-                                }
-
-                                .icon{
-                                    width: 26px;
-                                    height: 26px;
-                                    background-color: $light-primary-color;
-                                    border-radius: 5px;
-                                    color: #fff;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-
-                                    span{
-                                        font-size: 20px;
-                                    }
-                                }
-                            }
-                        }
+                        height: 145px;
                     }
-                }
-            }
 
-            .popular-brands{
-                .brands{
-                    display: flex;
-                    gap: 20px;
-
-                    .brand{
-                        width: 100px;
-                        height: 100px;
+                    .caption{
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        box-shadow: $box-shadow;
-                        border-radius: 10px;
+                        flex-direction: column;
+                        gap: 7px;
+                        margin: 10px;
 
-                        img{
-                            width: calc(100% - 26px);
-                            height: calc(100% - 26px);
-                        }
-                    }
-                }
-            }
-
-            .products{
-                .products-list{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 14px;
-
-                    .product{
-                        width: 100%;
-                        height: 90px;
-                        background-color: #fff;
-                        border-radius: 8px;
-                        box-shadow: $box-shadow;
-                        display: flex;
-                        gap: 12px;
-                        padding: 10px;
-
-                        img{
-                            width: 70px;
-                            height: 70px;
-                            object-fit: cover;
+                        h4{
+                            font-size: 14px;
+                            font-weight: 500;
                         }
 
-                        .caption{
+                        .product-details{
                             display: flex;
-                            flex-direction: column;
-                            gap: 5px;
+                            justify-content: space-between;
+                            font-size: 16px;
+                            font-weight: 600;
 
-                            h3{
-                                font-size: 12px;
-                                font-weight: 500;
-                                color: $title-color;
+                            .product-price{
+                                color: $text-color;
                             }
 
-                            .size-and-count{
-                                font-size: 10px;
-                                display: flex;
-                                gap: 7px;
-
-                                div{
-                                    display: flex;
-                                    gap: 3px;
-                                    align-items: center;
-                                    color: #959595;
-
-                                    span{
-                                        font-size: 10;
-                                    }
-                                }
-                            }
-
-                            .price{
-                                color: #959595;
-                                font-size: 12px;
-                                font-weight: 600;
+                            .product-size{
+                                color: #717171;
                             }
                         }
                     }
                 }
             }
         }
-    }
 
-    #title{
-        font-size: 14px;
-        color: $title-color;
-        font-weight: 600;
-        margin: 18px 0px 6px;
+        .popular-brands{
+            h3{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 18px;
+            }
+
+            .brand-cards{
+                display: flex;
+                gap: 20px;
+
+                .brand-card{
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: $box-shadow;
+                    border-radius: 10px;
+
+                    img{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
+
+        .categories{
+            h3{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 18px;
+            }
+
+            .category-cards{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .category-card{
+                    width: 100%;
+                    height: 90px;
+                    border-radius: 8px;
+                    box-shadow: $box-shadow;
+                    padding: 10px;
+                    display: flex;
+                    gap: 20px;
+
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .caption{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 6px;
+
+                        h4{
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        p{
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: #717171;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,23 +1,23 @@
-//* Colors
-//* Light theme colors
-$light-theme-color: #fff;
-$light-variant-color: #f5f5f5;
-$light-border-color: #d9d9d9;
-$light-primary-color: #321D0B;
-$light-bg-color: #EFEFEF;
-$title-color: #2d2d2d;
+//Colors
+// Background color
+$bg-color: #fff;
+// Cards color
+$primary-color: #fff;
+// Button color
+$btn-color: #321D0B;
+$btn-text-color: #fff;
+// Navigation bar color
+$nav-color: #321D0B;
+// Text colors
+$text-color: #FF9314;
+// Input bg color
+$input-color: #F5F5F5;
+$input-text-color: #aaa;
+$input-border-color: #D9D9D9;
+// Title color (e.x: Hello, John!, RECOMMENDED FOR YOU, COFFE SHOP)
+$title-color: #321D0B;
+// Light text color
+$light-color: #7D7D7D;
 
-//* Dark theme colors
-$dark-theme-color: #111827;
-$dark-variant-color: #1C2431; // Light primary color, Light bg color
-$dark-border-color: #1D2839;
-
-$unhover-text-color: #848484;
-$second-color: #7d7d7d;
-$orange-color: #FF9314;
-
-//* FONTS
-$font: "Poppins", sans-serif;
-
-//* SHADOWS
-$box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+//Box shadow
+$box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
