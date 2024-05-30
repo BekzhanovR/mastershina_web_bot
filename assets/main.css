@@ -230,4 +230,23 @@
   font-size: 14px;
   font-weight: 600;
   color: #717171;
+}
+#pages #nav {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 24px;
+  background-color: #321D0B;
+  border-radius: 18px;
+  color: #717171;
+  font-size: 24px;
+}
+#pages #nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#pages #nav .menu li.active {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

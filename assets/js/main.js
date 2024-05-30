@@ -37,3 +37,14 @@ registerBtn.addEventListener("click", () => {
     addressSetup.classList.add('active')
 })
 
+// Pages
+const navItems = document.querySelectorAll('#nav ul li')
+
+navItems.forEach(item => {
+    item.addEventListener("click",() => {
+        navItems.forEach(e => {
+            e.classList.remove('active')
+        })
+        item.classList.add('active')
+    })
+});

@@ -281,4 +281,26 @@
             }
         }
     }
+
+    #nav{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 24px;
+        background-color: $nav-color;
+        border-radius: 18px;
+        color: #717171;
+        font-size: 24px;
+
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        
+            li.active{
+                color: #fff;
+            }
+        }
+    }
 }
